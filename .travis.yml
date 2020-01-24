@@ -1,9 +1,4 @@
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-  keep_history: true
-  on:
-    branch: master
-    
-    
+# R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
+
+language: R
+cache: packages
