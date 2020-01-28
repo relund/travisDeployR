@@ -18,7 +18,7 @@ deploy:
   provider: releases
   token: $github_token
   file: data.csv
-  cleanup: false
+  skip_cleanup: true
   overwrite: true
   on:
     branch: master
