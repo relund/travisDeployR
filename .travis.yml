@@ -1,8 +1,16 @@
-env:
-  global:
-    - issue=$(<issues.txt)
-matrix:
-  include:
-  - language: bash
-    script:
-    - bash run.sh 
+language: r
+
+#install:
+#    - Rscript install_packages.R
+
+script:
+    - Rscript script.R
+
+#env:
+#  global:
+#    - issue=$(<issues.txt)
+#matrix:
+#  include:
+#  - language: bash
+#    script:
+#    - bash run.sh 
