@@ -1,3 +1,4 @@
+os: linux
 language: r
 
 install:
@@ -15,9 +16,9 @@ before_deploy:
       
 deploy:
   provider: releases
-  api_key: $github_token
+  token: $github_token
   file: data.csv
-  skip_cleanup: true
+  cleanup: false
   overwrite: true
   on:
     branch: master
