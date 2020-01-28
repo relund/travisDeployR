@@ -8,7 +8,7 @@ script:
     - Rscript script.R
 
 before_deploy:
-  token: $github_token
+#  token: $github_token
   # Set up git user name and tag this commit
   - git config --local user.name "relund"
   - git config --local user.email "junk@relund.dk"
