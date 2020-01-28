@@ -1,0 +1,8 @@
+env:
+  global:
+    - issue=$(<issues.txt)
+matrix:
+  include:
+  - language: bash
+    script:
+    - bash run.sh 
