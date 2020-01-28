@@ -19,6 +19,8 @@ deploy:
   file: data.csv
   skip_cleanup: true
   overwrite: true
+  on:
+    branch: master
 
 
 
