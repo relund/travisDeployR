@@ -6,6 +6,17 @@ install:
 script:
     - Rscript script.R
 
+deploy:
+  provider: releases
+  api_key: "GITHUB OAUTH TOKEN"
+  file: data.csv
+  skip_cleanup: true
+  on:
+    tags: true
+
+
+
+
 #env:
 #  global:
 #    - issue=$(<issues.txt)
