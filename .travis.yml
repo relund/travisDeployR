@@ -15,7 +15,7 @@ before_deploy:
       
 deploy:
   provider: releases
-  github_token: $github_token
+  api_key: $github_token
   file: data.csv
   skip_cleanup: true
   overwrite: true
