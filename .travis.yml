@@ -1,7 +1,7 @@
 language: r
 
-#install:
-#    - Rscript install_packages.R
+install:
+    - Rscript install.R
 
 script:
     - Rscript script.R
