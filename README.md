@@ -1,15 +1,16 @@
 # Using Travis CI to run an R script and push the result to GitHub
 
 This is a template repository with an example on how to run an R script and push the result to 
-the GitHub master branch.
+the GitHub master branch. 
 
-You need to do the following:
+You need to do the following (you need to replace the username: relund and repo name: 
+travisDeployR):
 
 - Setup a GitHub repo (e.g. a clone of this repo) and a Travis CI account. You must activate the
-  repo at https://travis-ci.org/<your username>.
+  repo at https://travis-ci.org/relund.
 
 - Generate a personal access token at https://github.com/settings/tokens and copy it to 
-  https://travis-ci.org/<user name>/<repo name>/settings (name it github_token).
+  https://travis-ci.org/relund/travisDeployR/settings (name it github_token).
   
 - Modify `install.R`, such that the R packages you need are installed.
 
@@ -21,4 +22,4 @@ You need to do the following:
   have a loop).
 
 - If you want to run the build e.g. daily set the cron job at 
-  https://travis-ci.org/<user name>/<repo name>/settings.
+  https://travis-ci.org/relund/travisDeployR/settings.
